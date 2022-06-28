@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 
@@ -7,13 +7,7 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import {ProductsModules, ProductLikedModules} from './StackNavigations';
 
-import {
-  HP,
-  COLORS,
-  BORDERRADIUS,
-  SPACING,
-  BOXWITHSHADOW,
-} from '../utils/themes';
+import {HP, COLORS, SPACING, BOXWITHSHADOW} from '../utils/themes';
 
 const Tab = createBottomTabNavigator();
 
@@ -113,6 +107,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignContent: 'center',
     alignSelf: 'center',
-    // backgroundColor: 'red',
   },
 });

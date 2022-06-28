@@ -2,7 +2,6 @@ import React from 'react';
 import {
   View,
   StyleSheet,
-  StatusBar,
   Image,
   TouchableOpacity,
   Platform,
@@ -16,7 +15,6 @@ import {
   BORDERRADIUS,
   HP,
   WP,
-  BOXWITHSMALLSHADOW,
   BOXWITHSHADOW,
 } from '../utils/themes';
 import {currencyFormat} from '../utils/constants';

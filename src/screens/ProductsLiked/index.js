@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, StyleSheet, StatusBar, FlatList, Image} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  StatusBar,
+  FlatList,
+  Image,
+  Platform,
+} from 'react-native';
 
 import {useSelector} from 'react-redux';
 import CustomText from '../../components/CustomText';

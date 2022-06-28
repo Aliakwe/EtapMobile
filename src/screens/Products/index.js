@@ -5,6 +5,7 @@ import {
   StatusBar,
   FlatList,
   RefreshControl,
+  Platform,
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {showMessage} from 'react-native-flash-message';

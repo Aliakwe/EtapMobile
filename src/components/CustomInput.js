@@ -1,16 +1,5 @@
 import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TextInput,
-  StyleSheet,
-  Dimensions,
-  Platform,
-  PixelRatio,
-  StatusBar,
-} from 'react-native';
+import {View, TextInput, StyleSheet, Platform} from 'react-native';
 
 import {COLORS, BORDERRADIUS, HP, SPACING} from '../utils/themes';
 
@@ -18,26 +7,21 @@ import CustomText from './CustomText';
 
 function CustomInput(props) {
   const {
-    iconName,
     placeholder,
     label,
     value,
     onChangeText,
-    backgroundColor,
+
     onFocus,
     style,
     secureTextEntry,
-    onPressIcon,
-    multiline,
-    textArea,
+
     error,
-    onBlur,
+
     keyboardType,
-    onLabelInfoClick,
+
     inputRef,
-    changeVisibility,
-    width,
-    textcolor,
+
     editable,
   } = props;
   return (
@@ -109,9 +93,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     marginBottom: SPACING.xxsmall,
-    // borderColor: 'red',
-    // borderWidth: 0.4,
-    // borderStyle: 'solid',
   },
   labelText: {
     color: COLORS.greyDark,

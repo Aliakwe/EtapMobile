@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  StatusBar,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
+import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/Feather';
 import CustomText from './CustomText';
@@ -15,7 +9,6 @@ import {
   BORDERRADIUS,
   HP,
   WP,
-  BOXWITHSMALLSHADOW,
   BOXWITHSHADOW,
 } from '../utils/themes';
 import {currencyFormat} from '../utils/constants';
