@@ -4,17 +4,18 @@ import {Platform} from 'react-native';
 // export const baseURL = 'https://fakestoreapi.com';
 export const baseURL =
   Platform.OS === 'android'
-    ? 'http://fakestoreapi.com'
+    ? 'https://fakestoreapi.com'
     : 'https://fakestoreapi.com';
 
 const AxiosCall = async (callObj, dispatch) => {
   const {path, method, data, contentType} = callObj;
 
   const appheaders = {
+    // 'Content-Type': 'application/json',
+    // Accept: '*/*',
+    // 'Accept-Encoding': 'gzip, deflate, br',
+    Accept: 'application/json',
     'Content-Type': 'application/json',
-    Accept: '*/*',
-    'Accept-Encoding': 'gzip, deflate, br',
-    // 'User-Agent': 'oemanager/9 CFNetwork/1312 Darwin/20.6.0',
   };
 
   const headers = appheaders;
@@ -34,6 +35,7 @@ const AxiosCall = async (callObj, dispatch) => {
     const result = response && response.data;
     return result;
   } catch (error) {
+    console.log(error, 'errors');
     if (error.response.status == 401) {
       //  this can handle a universal function of the app when there is 401 status code
     }

@@ -31,7 +31,7 @@ export const getProductsRequest = () => {
         path: 'products',
       };
       const data = await AxiosCall(callObj);
-      dispatch(getProductsSuccess(data));
+      dispatch(getProductsSuccess(data).to);
     } catch (e) {
       if (e.response) {
         // Request made and server responded
